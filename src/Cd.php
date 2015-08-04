@@ -3,14 +3,14 @@
     {
         private $title;
         private $artist;
-        private $$cover_art;
+        private $cover_art;
         private $price;
 
-        function_construct($album_name, $band_name, $img_path, $album_price = 10.99)
+        function __construct($album_name, $band_name, $img_path, $album_price = 10.99)
         {
             $this->title = $album_name;
             $this->artist = $band_name;
-            $this->cover_art = $image_path;
+            $this->cover_art = $img_path;
             $this->price = $album_price;
         }
 
